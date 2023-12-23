@@ -1,1 +1,30 @@
-<html><title>netheround</title><body>Work-in-Progress...</body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>netheorund</title>
+</head>
+<body>
+    <p>Work-in-Progress...</p>
+    <p id="visitor-count">Loading...</p>
+
+    <script>
+        function UpdateVisitorCount() {
+            if (typeof(Storage) !== "undefined") {
+                var Visitors = localStorage.getItem("visitorCount")
+
+                Visitors = (Visitors) ? parseInt(Visitors) + 1 : 1
+
+                localStorage.setItem("visitorCount", Visitors)
+
+                document.getElementById("visitor-count").innerHTML = "Website views: " + Visitors
+            } else {
+                document.getElementById("visitor-count").innerHTML = "Visitors count cannot be tracked."
+            }
+        }
+
+        window.onload = UpdateVisitorCount
+    </script>
+</body>
+</html>
