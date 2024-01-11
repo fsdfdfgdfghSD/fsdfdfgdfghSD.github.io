@@ -4,7 +4,7 @@ const port = 3000
 
 const words = ["hamachi", "net", "fignea polnaia", "awoo", "dimon", "zima", "dimon gandon"]
 
-app.get("/dimonapi", (req, res) => {
+app.get("/api/dimonapi", (req, res) => {
     const randomWord = words[Math.floor(Math.random() * words.length)]
     res.json({ word: randomWord })
 })
