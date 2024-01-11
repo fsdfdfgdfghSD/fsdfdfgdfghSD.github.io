@@ -3,7 +3,7 @@ const PORT = 6969
 
 const words = ["dimon", "net", "hamachi", "fignea polnaia", "awoo"]
 
-app.get("/dimonapi", (request, response) => {
+app.get("/", (request, response) => {
     response.status(200).send({
         word: words[Math.floor(Math.random() * words.length)]
     })
