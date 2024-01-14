@@ -36,16 +36,16 @@ function Magic() {
     setTimeout(() => {
         Img.setAttribute("src", "assets/images/Dima.png")
         ToggleBtn.style["display"] = "block"
-        ToggleBtn.style["margin"] = "0 auto"  
+        ToggleBtn.style["margin"] = "0 auto"
         Img.style["transform"] = "scale(1)"
         Word.innerHTML = "..."
+        confetti()
     }, 1000)
          
     Img.setAttribute("src", "assets/images/dima_speaking.png")
     Img.style["transform"] = "scale(0.8)"
     
     Word.innerHTML = get_random_word()
-    confetti()
 }
 
 function get_random_word() {
