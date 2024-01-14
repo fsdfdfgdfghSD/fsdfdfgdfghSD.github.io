@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Speak with dimon!</title>
+</head>
+<body>
+    <div class="dima">
+        <h1>Speak with dimon!</h1>
+        <img src="assets/images/Dima.png" id="img">
+        <h2 id="word">...</h2>
+        <button onclick="Magic()" id="toggleBtn">Make him speak</button>
+    </div>
+
+    <style>
+        @font-face {
+            font-family: "Minecraft";
+            src: url("assets/fonts/Minecraft.ttf");
+        }
+
+        * {
+            font-family: "Minecraft";
+            color: white;
+            letter-spacing: 4px;
+        }
+
+        body {
+            background-image: url("assets/images/background.png");
+            background-size: cover;
+        }
+
+        .dima {
+            text-align: center;
+        }
+
+        .dima img {
+            max-width: 400px;
+            border-radius: 5px;
+            border: solid 1px green;
+            box-shadow: 0 0 10px rgba(0, 255, 0, 1);
+            transition: 0.1s ease;
+        }
+
+        .dima button {
+            color: white;
+            background-color: rgb(100, 47, 11);
+            font-size: 25px;
+            border-radius: 5px;
+            border: solid 1px green;
+            box-shadow: 0 0 10px rgba(0, 255, 0, 1);
+        }
+    </style>
+
+    <script src="./index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+</body>
+</html>
