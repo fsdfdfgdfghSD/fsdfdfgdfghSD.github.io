@@ -1,0 +1,46 @@
+luarocks-admin(1)                                                                                                                                                                                             luarocks-admin(1)
+
+NAME
+       luarocks-admin - LuaRocks repository administration interface
+
+SYNOPSIS
+             luarocks-admin [options] command
+
+DESCRIPTION
+       LuaRocks repository administration interface
+
+       Variables from the "variables" table of the configuration file can be overridden with VAR=VALUE assignments.
+
+       Options:
+
+       --from=<server>
+              Fetch rocks/rockspecs from this server (takes priority over config file)
+
+       --only-from=<server>
+              Fetch rocks/rockspecs from this server only (overrides any entries in the config file)
+
+       --to=<tree>
+              Which tree to operate on.
+
+       Commands:
+
+       add    Add a rock or rockspec to a rocks server.
+
+       help   Help on commands.
+
+       make_manifest
+              Compile a manifest file for a repository.
+
+       refresh_cache
+              Refresh local cache of a remote rocks server.
+
+SEE ALSO
+       luarocks(1)
+
+FILES
+       /etc/luarocks/config.lua
+
+AUTHOR
+       Enrico Tassi <gareuselesinge@debian.org>
+
+LuaRocks repository administration                                                                      10 November 2021                                                                                      luarocks-admin(1)
