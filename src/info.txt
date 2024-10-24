@@ -1,1 +1,0 @@
-Online linux man pages for section 1 create something similarly to: http://man.he.net/
